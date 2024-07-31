@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cratenote">
+
+    <ProgressBar
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressbar"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        >
+
+    </ProgressBar>
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_height="?actionBarSize"
+        android:layout_width="match_parent"
+        android:id="@+id/toolbarofcreatenote"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/createtitleofnote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter your note title here"
+            android:isScrollContainer="false"
+            android:paddingTop="12dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </EditText>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="15sp"
+        android:background="#faf7f7"
+        android:gravity="top|left"
+        android:textColor="@color/black"
+        android:hint="Enter your note title here"
+        android:layout_below="@+id/toolbarofcreatenote"
+        android:padding="15dp"
+        android:id="@+id/createcontentofnote">
+
+    </EditText>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="bottom|end"
+        android:backgroundTint="#2196F3"
+        android:id="@+id/savenote"
+        android:src="@drawable/save"
+
+        app:maxImageSize="40dp"
+        >
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+</RelativeLayout>
